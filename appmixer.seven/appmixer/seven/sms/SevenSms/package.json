@@ -1,0 +1,16 @@
+{
+    "name": "SevenSms",
+    "version": "1.0.0",
+    "description": "",
+    "main": "SevenSms.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "sms77 e.K. <support@sms77.io> (https://www.sms77.io)",
+    "license": "MIT",
+    "dependencies": {
+        "sms77-client": "^2.24.0",
+        "node-fetch": "^2.6.7"
+    }
+}

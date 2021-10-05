@@ -1,0 +1,65 @@
+{
+    "name": "appmixer.seven.sms.SevenVoice",
+    "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAIAAABLbSncAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4gEeCRYRYwe3nwAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAXSURBVAjXY2BgYPj//z8WErsoBAw+HQBdc1+hmBJKIwAAAABJRU5ErkJggg==",
+    "inPorts": [
+        {
+            "name": "in",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "from": {
+                        "type": "string"
+                    },
+                    "text": {
+                        "type": "string"
+                    },
+                    "to": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "text",
+                    "to"
+                ]
+            },
+            "inspector": {
+                "inputs": {
+                    "from": {
+                        "type": "text",
+                        "group": "transformation",
+                        "label": "From",
+                        "index": 3
+                    },
+                    "text": {
+                        "type": "text",
+                        "group": "transformation",
+                        "label": "Text",
+                        "index": 1
+                    },
+                    "to": {
+                        "type": "text",
+                        "group": "transformation",
+                        "label": "To",
+                        "index": 2
+                    }
+                },
+                "groups": {
+                    "transformation": {
+                        "label": "Transformation"
+                    }
+                }
+            }
+        }
+    ],
+    "outPorts": [
+        {
+            "name": "out",
+            "options": [
+                {
+                    "label": "Response",
+                    "value": "response"
+                }
+            ]
+        }
+    ]
+}
