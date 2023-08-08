@@ -1,4 +1,4 @@
-![](https://seven.io/seven_outline_white.svg "seven Logo")
+![](https://www.seven.io/wp-content/uploads/Logo.svg "seven Logo")
 
 A collection of Appmixer actions for seven.
 
@@ -22,6 +22,6 @@ Add an environment variable called `SEVEN_API_KEY`.
 
 ## Support
 
-Need help? Feel free to [contact us](https://www.sms77.io/en/company/contact).
+Need help? Feel free to [contact us](https://www.seven.io/en/company/contact).
 
 [![MIT](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)

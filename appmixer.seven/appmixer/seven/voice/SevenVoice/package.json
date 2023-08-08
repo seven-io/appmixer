@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "sms77 e.K. <support@sms77.io> (https://www.sms77.io)",
+    "author": "seven communications GmbH & Co. KG <support@seven.io> (https://www.seven.io)",
     "license": "MIT",
     "dependencies": {
         "sms77-client": "^2.24.0",
