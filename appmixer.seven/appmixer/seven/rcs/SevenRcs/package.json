@@ -1,0 +1,16 @@
+{
+    "name": "SevenRcs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "seven communications GmbH & Co. KG <support@seven.io> (https://www.seven.io)",
+    "license": "MIT",
+    "dependencies": {
+        "@seven.io/client": "^4.4.0",
+        "node-fetch": "^2.6.13"
+    }
+}
