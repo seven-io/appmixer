@@ -1,0 +1,34 @@
+# managed-by: seven-io/isms-tools/scripts/dependabot-rollout.sh
+# Dependabot config: scheduled + grouped security updates. Do not edit by hand;
+# changes should be made in the script and re-rolled out with FORCE_UPDATE=true.
+# See: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directories:
+      - "/appmixer.seven/appmixer/seven/rcs/SevenRcs"
+      - "/appmixer.seven/appmixer/seven/sms/SevenSms"
+      - "/appmixer.seven/appmixer/seven/voice/SevenVoice"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    # Supply-chain hardening: delay new releases so yanked/compromised
+    # packages (e.g. nx 2024, shai-hulud worm 2025) get detected upstream
+    # before we bump. Security-advisory updates are NOT delayed by cooldown.
+    cooldown:
+      default-days: 5
+      semver-major-days: 14
+      semver-minor-days: 7
+      semver-patch-days: 3
+    groups:
+      security-all:
+        applies-to: security-updates
+        patterns: ["*"]
+      minor-patch:
+        applies-to: version-updates
+        patterns: ["*"]
+        update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "@seven/*"
+      - dependency-name: "@sms77/*"
